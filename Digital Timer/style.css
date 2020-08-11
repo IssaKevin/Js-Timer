@@ -1,0 +1,43 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color : #5e5ecc ;
+}
+.icon-clock{
+    align-content: center;
+    width: 60px;
+    height: 60px;
+}
+.mywell{
+    background-color: rgba(0, 0, 0 , 0.3);
+}
+.mywell label{
+    font-size: 1.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.counter{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 3px solid white;
+    animation-name: grow;
+    transform: rotate(45deg);
+    animation-iteration-count: infinite;
+    animation-duration: 0.7s;
+    animation-direction: alternate;
+    
+}
+.counter-time{
+    margin-top: -140px;
+}
+
+.count-cont{
+    display: none;
+}
+
+@keyframes grow{
+    0%{width: 150px;height: 150px;border-radius: 25%;}
+    25%{transform: rotate(60deg);}
+    75%{transform: rotate(-30deg)}
+    100%{width: 210px;height: 210px;}
+}

@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+
+    <!-- Custom CSS... -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons... -->
+    <link rel="stylesheet" href="iconfont/tabler-icons.min.css">
+
+    <title>Timer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <br>
+                <center><i class="ti ti-alarm display-2 text-white text-center"></i></center>
+                <br>
+                <h1 class="display-4 text-white text-center">Javascript Timer</h1>
+                <br>
+                <div class="well mywell p-3 text-white rounded-lg">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <label for="">Set Time:</label>
+                        </div>
+                        <div class="col-md-6">
+                            <form action="" class="form-inline">
+                                <input type="time" name="" id="timeinput" class="form-contol">&nbsp;
+                                <input type="submit" value="Start Timer" class="btn btn-outline-light btn-sm" id="btn">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="well count-cont text-center text-white">
+                    <center>
+                        <div class="counter" id="count">
+                            
+                        </div>
+                    </center>
+                    <center>
+                        <p class="display-4 counter-time" id="t">
+                            <span id="min">00</span>:<span id="secs">00</span>
+                        </p></center>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="main.js"></script>
