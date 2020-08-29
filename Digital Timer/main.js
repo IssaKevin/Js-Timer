@@ -1,6 +1,8 @@
 let btn = document.querySelector('#btn');
 
 let now = new Date().getTime();
+//The same you use:
+//let now = Date.now(); All gets time in milliseconds
 
 let here = new Date().toLocaleDateString();
 
@@ -9,6 +11,9 @@ const timeinput = document.querySelector('#timeinput');
 btn.addEventListener('click', Onsubmit);
 
 function Onsubmit(e) {
+    
+    //Mostly prevent default before other codes.
+    //Some how different
 
     timeValue = timeinput.value;
 
